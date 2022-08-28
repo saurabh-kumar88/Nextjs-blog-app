@@ -1,5 +1,5 @@
 import React from 'react';
-import Header from './Header';
+import WebsiteName from './WebsiteName';
 import NavBar from './NavBar';
 import Info from './Info';
 import Footer from './Footer';
@@ -10,19 +10,10 @@ const Layout = props => {
   
   return(
       <div>
-      <Head>
-          <title>WHATABYTE</title>
-          <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-          <meta charSet="utf-8"/>
-      </Head>
-      <div className="row">
-        <Header />
-        <NavBar />
-          {props.children}
-        {/* <Info /> */}
-        <PaginationBasic />
-        <Footer />
-      </div>  
+        <WebsiteName />
+        <div className='row'>
+            <div className='leftcolumn'></div>
+          </div>  
     </div>
     )  
   }
